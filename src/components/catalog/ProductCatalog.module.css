@@ -1,0 +1,22 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.title {
+  font-size: 20px;
+  color: var(--text-h);
+}
+
+.status {
+  color: var(--text);
+  padding: 24px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}

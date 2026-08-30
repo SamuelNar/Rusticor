@@ -1,0 +1,31 @@
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: var(--heading);
+  font-size: 28px;
+  font-weight: 600;
+
+  &[data-category='colchon'] {
+    background: linear-gradient(135deg, #b5651d, #8a4a12);
+  }
+  &[data-category='soporte'] {
+    background: linear-gradient(135deg, #7a5a3a, #57402a);
+  }
+  &[data-category='almohada'] {
+    background: linear-gradient(135deg, #c98a4b, #a56a2f);
+  }
+  &[data-category='sabanas'] {
+    background: linear-gradient(135deg, #9c7b5a, #75593d);
+  }
+}

@@ -1,0 +1,45 @@
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: var(--bg);
+
+  input {
+    width: 56px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: var(--text-h);
+    text-align: right;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    color: var(--text);
+  }
+
+  &:focus-within {
+    border-color: var(--accent-border);
+  }
+}

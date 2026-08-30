@@ -1,0 +1,94 @@
+.builder {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  padding: 18px;
+  align-self: flex-start;
+  position: sticky;
+  top: 16px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 960px) {
+    position: static;
+  }
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  color: var(--text-h);
+}
+
+.clearButton {
+  border: none;
+  background: none;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.empty {
+  color: var(--text);
+  font-size: 14px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.group {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+
+  &:first-of-type {
+    border-top: none;
+    margin-top: 12px;
+  }
+}
+
+.groupHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.groupName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.groupRemove {
+  border: none;
+  background: none;
+  color: var(--text);
+  font-size: 11px;
+  cursor: pointer;
+  text-decoration: underline;
+  flex-shrink: 0;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.footer {
+  margin-top: 14px;
+}

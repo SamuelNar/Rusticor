@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+
+  @media (max-width: 720px) {
+    padding: 16px 20px;
+  }
+}
+
+.logo {
+  font-family: var(--heading);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-h);
+  letter-spacing: -0.3px;
+}
+
+.tagline {
+  font-size: 15px;
+  color: var(--text);
+}
