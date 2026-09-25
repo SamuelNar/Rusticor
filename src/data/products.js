@@ -1,6 +1,8 @@
 // Catálogo de demo. Los precios son placeholders en ARS.
 // `image` es el nombre de archivo esperado en src/assets/products/ — si no existe,
 // ProductCard/ComboItemRow muestran un placeholder automáticamente.
+// Las fotos actuales son stock de demo (ver src/assets/CREDITS.md): reemplazar
+// por fotos reales de los productos antes de producción.
 export const products = [
   {
     id: 'colchon-1-plaza-espuma',
